@@ -39,7 +39,7 @@ class NeuralNetwork(nn.Module):
         logits = self.linear_relu_stack(x)
         return logits
 
-#############################
+
 
 def get_lossfn_and_optimizer(mymodel):
     loss_fn = nn.CrossEntropyLoss()
@@ -67,7 +67,7 @@ def load_data():
     
     return training_data, test_data
 
-#############################
+
 
 def create_dataloaders(training_data, test_data, batch_size=64):
 
@@ -82,7 +82,7 @@ def create_dataloaders(training_data, test_data, batch_size=64):
         
     return train_dataloader, test_dataloader
   
-#############################
+
 
 def get_model():
     
